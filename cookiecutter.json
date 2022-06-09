@@ -1,6 +1,6 @@
 {
   "outputDir": "aws-sam-pipeline",
-  "git_provider_type": "",
+  "git_provider_type": "CodeCommit",
   "codestar_full_repository_id": "",
   "codecommit_repository_name": "",
   "main_git_branch": "",
