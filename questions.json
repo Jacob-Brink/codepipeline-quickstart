@@ -1,18 +1,5 @@
 {
-  "questions": [{
-    "key": "git_provider_type",
-    "question": "What is the Git provider?",
-    "options": ["Bitbucket", "CodeCommit", "GitHub", "GitHubEnterpriseServer"],
-    "nextQuestion": {
-      "CodeCommit": "codecommit_repository_name"
-    },
-    "defaultNextQuestion": "codestar_full_repository_id"
-  }, {
-    "key": "codestar_full_repository_id",
-    "question": "What is the full repository id (Example: some-user/my-repo)?",
-    "isRequired": true,
-    "defaultNextQuestion": "main_git_branch"
-  }, {
+  "questions": [ {
     "key": "codecommit_repository_name",
     "question": "What is the CodeCommit repository name?",
     "isRequired": true
