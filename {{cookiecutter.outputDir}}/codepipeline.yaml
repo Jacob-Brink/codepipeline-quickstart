@@ -748,11 +748,12 @@ Resources:
         Type: CODEPIPELINE
         BuildSpec: pipeline/buildspec_deploy.yml
 
-
-{%- if is_codestar_source %}
 Outputs:
+{%- if is_codestar_source %}
   CodeStarConnectionArn:
     Condition: CreateConnection
     Description: The Arn of AWS CodeStar Connection used to connect to external code repositories.
     Value: !Ref CodeStarConnection
 {%- endif %}
+  CodeBuildRoleArn:
+    Value: !GetAtt CodeBuildServiceRole.Arn
